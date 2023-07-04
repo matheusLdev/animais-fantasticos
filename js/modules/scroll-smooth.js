@@ -1,4 +1,4 @@
-function scrollSmooth() {
+export default function scrollSmooth() {
   const internalLinks = document.querySelectorAll("[data-menu='smooth'] a[href^='#']");
 
   function scrollToSection(event) {
@@ -9,10 +9,9 @@ function scrollSmooth() {
       behavior: "smooth",
       block: "start",
   });
-  }
+  };
 
   internalLinks.forEach((link) => {
     link.addEventListener("click", scrollToSection);
   });
-}
-scrollSmooth();
+};

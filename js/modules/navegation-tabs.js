@@ -1,4 +1,4 @@
-function tabNav () {
+export default function tabNav () {
   const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
   const tabContent = document.querySelectorAll("[data-tab='content'] section");
   document.documentElement.className += " js";
@@ -19,6 +19,5 @@ function tabNav () {
         activeTab(index);
       });
     });
-  }
-}
-tabNav();
+  };
+};

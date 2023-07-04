@@ -1,4 +1,4 @@
-function accordionList() {
+export default function accordionList() {
   const accordionList = document.querySelectorAll("[data-anime='accordion'] dt");
   const activeClass = "active";
   if(accordionList.length){
@@ -14,5 +14,4 @@ function accordionList() {
       item.addEventListener("click", activeAccordion);
     });
   };
-}
-accordionList();
+};

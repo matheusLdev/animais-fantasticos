@@ -1,4 +1,4 @@
-function scrollAnimate() {
+export default function scrollAnimate() {
   const sections = document.querySelectorAll("[data-anime='scroll']");
   if (sections.length) {
     const halfWindow = window.innerHeight / 2;
@@ -17,4 +17,3 @@ function scrollAnimate() {
     window.addEventListener("scroll", livenScroll);
   };
 };
-scrollAnimate();
