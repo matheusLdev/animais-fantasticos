@@ -1,5 +1,5 @@
 function scrollSmooth() {
-  const internalLinks = document.querySelectorAll("a[href^='#']");
+  const internalLinks = document.querySelectorAll("[data-menu='smooth'] a[href^='#']");
 
   function scrollToSection(event) {
     event.preventDefault();

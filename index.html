@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="menu">
-      <nav>
+      <nav data-menu="smooth">
         <ul>
           <li><a href="#animals">Animais</a></li>
           <li><a href="#faq">Faq</a></li>
@@ -22,9 +22,9 @@
       </nav>
     </header>
 
-    <section class="grid-section animals js-scroll" id="animals">
+    <section class="grid-section animals" data-anime="scroll" id="animals">
       <h1 class="title">Animais Fantásticos</h1>
-      <ul class="animals-list js-tabmenu">
+      <ul class="animals-list" data-tab="menu">
         <li>
           <img src="img/image1.jpg" alt="Raposa">
         </li>
@@ -44,8 +44,8 @@
           <img src="img/image6.jpg" alt="Leão">
         </li>
       </ul>
-      <div class="animals-description js-tabcontent">
-        <section>
+      <div class="animals-description" data-tab="content">
+        <section data-anime="show-right">
           <h2>Raposa</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
             por um focinho comprido e uma cauda longa e peluda.</p>
@@ -55,7 +55,7 @@
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </section>
         
-        <section>
+        <section data-anime="show-right">
           <h2>Esquilo</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
             por um focinho comprido e uma cauda longa e peluda.</p>
@@ -64,7 +64,8 @@
             qual a raposa vermelha é a mais comum.</p>
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </section>
-        <section>
+
+        <section data-anime="show-right">
           <h2>Urso</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
             por um focinho comprido e uma cauda longa e peluda.</p>
@@ -73,7 +74,8 @@
             qual a raposa vermelha é a mais comum.</p>
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </section>
-        <section>
+
+        <section data-anime="show-down">
           <h2>Lobo</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
             por um focinho comprido e uma cauda longa e peluda.</p>
@@ -82,7 +84,8 @@
             qual a raposa vermelha é a mais comum.</p>
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </section>
-        <section>
+
+        <section data-anime="show-down">
           <h2>Macaco</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
             por um focinho comprido e uma cauda longa e peluda.</p>
@@ -91,7 +94,8 @@
             qual a raposa vermelha é a mais comum.</p>
           <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
         </section>
-        <section>
+
+        <section data-anime="show-down">
           <h2>Leão</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
             por um focinho comprido e uma cauda longa e peluda.</p>
@@ -103,9 +107,9 @@
       </div>
     </section>
 
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq" data-anime="scroll" id="faq">
       <h1 class="title">FAQ</h1>
-      <dl class="faq-list js-accordion">
+      <dl class="faq-list" data-anime="accordion">
         <dt>Qual a idade dos animais?</dt>
         <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
         <dt>Eles são fantásticos?</dt>
@@ -117,7 +121,7 @@
       </dl>
     </section>
 
-    <section class="grid-section contact js-scroll" id="contact">
+    <section class="grid-section contact" data-anime="scroll" id="contact">
       <h1 class="title">Contato</h1>
       <div class="map">
         <img src="img/map.png">
@@ -138,5 +142,6 @@
     <script src="js/accordion-list.js"></script>
     <script src="js/scroll-smooth.js"></script>
     <script src="js/scroll-animate.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
