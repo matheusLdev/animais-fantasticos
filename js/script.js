@@ -7,6 +7,7 @@ import tooltip from "./modules/tooltip.js";
 import dropdown from "./modules/dropdown.js";
 import menuMobile from "./modules/menu-mobile.js";
 import numbersAnimate from "./modules/numbers-animate.js";
+import businessHours from "./modules/business-hours.js";
 
 accordionList();
 tabNav();
@@ -17,3 +18,4 @@ tooltip();
 dropdown();
 menuMobile();
 numbersAnimate();
+businessHours();
