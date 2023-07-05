@@ -13,7 +13,7 @@ export default function menuMobile() {
     outsideClick(listMenu, ["click", "touchstart"], () => {
       listMenu.classList.remove("active");
       btnMenu.classList.remove("active");
-    })
+    });
   };
 
   events.forEach(event => btnMenu.addEventListener(event, toggleMenu));

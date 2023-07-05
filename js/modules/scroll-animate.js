@@ -9,6 +9,8 @@ export default function scrollAnimate() {
         const sectionVisible = (sectionTop - halfWindow) < 0;
         if (sectionVisible) {
           section.classList.add("active");
+        } else if (section.classList.contains("active")) {
+          section.classList.remove("active");
         };
       });
     };

@@ -6,6 +6,7 @@ import modal from "./modules/modal.js";
 import tooltip from "./modules/tooltip.js";
 import dropdown from "./modules/dropdown.js";
 import menuMobile from "./modules/menu-mobile.js";
+import numbersAnimate from "./modules/numbers-animate.js";
 
 accordionList();
 tabNav();
@@ -15,3 +16,4 @@ modal();
 tooltip();
 dropdown();
 menuMobile();
+numbersAnimate();
