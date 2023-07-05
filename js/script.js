@@ -5,6 +5,7 @@ import scrollSmooth from "./modules/scroll-smooth.js";
 import modal from "./modules/modal.js";
 import tooltip from "./modules/tooltip.js";
 import dropdown from "./modules/dropdown.js";
+import menuMobile from "./modules/menu-mobile.js";
 
 accordionList();
 tabNav();
@@ -13,3 +14,4 @@ scrollSmooth();
 modal();
 tooltip();
 dropdown();
+menuMobile();

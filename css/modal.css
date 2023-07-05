@@ -51,12 +51,10 @@
   box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
   font-size: 1.2em;
   color: #fff;
-  font-family: "IBM Plex Mono", monospace;
   cursor: pointer;
 }
 
 .modal label {
-  font-family: "IBM Plex Mono", monospace;
   display: block;
   font-weight: bold;
   margin: 1rem 0 .5rem 0;
@@ -76,7 +74,6 @@
   padding: .7rem 2rem;
   font-size: 1rem;
   color: #fff;
-  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   margin-top: 1rem;
 }
