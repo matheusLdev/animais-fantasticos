@@ -4,6 +4,7 @@ import scrollAnimate from "./modules/scroll-animate.js";
 import scrollSmooth from "./modules/scroll-smooth.js";
 import modal from "./modules/modal.js";
 import tooltip from "./modules/tooltip.js";
+import dropdown from "./modules/dropdown.js";
 
 accordionList();
 tabNav();
@@ -11,3 +12,4 @@ scrollAnimate();
 scrollSmooth();
 modal();
 tooltip();
+dropdown();
