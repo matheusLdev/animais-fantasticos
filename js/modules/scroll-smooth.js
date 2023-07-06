@@ -8,10 +8,10 @@ export default function scrollSmooth() {
     section.scrollIntoView({
       behavior: "smooth",
       block: "start",
-  });
-  };
+    });
+  }
 
   internalLinks.forEach((link) => {
     link.addEventListener("click", scrollToSection);
   });
-};
+}

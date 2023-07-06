@@ -10,7 +10,7 @@ export default function businessHours() {
   const weekOpen = daysWeek.indexOf(dayNow) !== -1;
   const hourOpen = (hourNow >= hourWeek[0] && hourNow < hourWeek[1]);
 
-  if(weekOpen && hourOpen) {
+  if (weekOpen && hourOpen) {
     openingHours.classList.add("open");
   };
-};
+}

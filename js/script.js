@@ -9,6 +9,8 @@ import menuMobile from "./modules/menu-mobile.js";
 import businessHours from "./modules/business-hours.js";
 import fetchAnimals from "./modules/fetch-animals.js";
 
+document.documentElement.className += " js";
+
 accordionList();
 tabNav();
 scrollAnimate();
