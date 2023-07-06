@@ -3,7 +3,7 @@ import TabNav from "./modules/tabnav.js";
 import scrollAnimate from "./modules/scroll-animate.js";
 import ScrollSmooth from "./modules/scroll-smooth.js";
 import Modal from "./modules/modal.js";
-import tooltip from "./modules/tooltip.js";
+import Tooltip from "./modules/tooltip.js";
 import dropdown from "./modules/dropdown.js";
 import menuMobile from "./modules/menu-mobile.js";
 import businessHours from "./modules/business-hours.js";
@@ -23,8 +23,10 @@ tabnav.init()
 const modal = new Modal("[data-modal='open']", "[data-modal='close']", "[data-modal='container']");
 modal.init()
 
+const tooltip = new Tooltip("[data-tooltip]");
+tooltip.init();
+
 scrollAnimate();
-tooltip();
 dropdown();
 menuMobile();
 businessHours();
