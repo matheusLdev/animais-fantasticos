@@ -1,6 +1,6 @@
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabnav.js";
-import scrollAnimate from "./modules/scroll-animate.js";
+import ScrollAnimate from "./modules/scroll-animate.js";
 import ScrollSmooth from "./modules/scroll-smooth.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
@@ -26,7 +26,10 @@ modal.init()
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-scrollAnimate();
+const scrollAnimate = new ScrollAnimate("[data-anime='scroll']");
+scrollAnimate.init();
+
+
 dropdown();
 menuMobile();
 businessHours();
