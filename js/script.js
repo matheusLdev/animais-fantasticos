@@ -1,4 +1,4 @@
-import accordionList from "./modules/accordion-list.js";
+import Accordion from "./modules/accordion.js";
 import tabNav from "./modules/navegation-tabs.js";
 import scrollAnimate from "./modules/scroll-animate.js";
 import ScrollSmooth from "./modules/scroll-smooth.js";
@@ -14,7 +14,9 @@ document.documentElement.className += " js";
 const scrollSmooth = new ScrollSmooth("[data-menu='smooth'] a[href^='#']");
 scrollSmooth.init();
 
-accordionList();
+const accordion = new Accordion("[data-anime='accordion'] dt");
+accordion.init();
+
 tabNav();
 scrollAnimate();
 modal();
