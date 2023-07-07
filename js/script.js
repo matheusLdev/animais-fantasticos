@@ -6,7 +6,7 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import Dropdown from "./modules/dropdown.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import businessHours from "./modules/business-hours.js";
+import BusinessHours from "./modules/business-hours.js";
 import fetchAnimals from "./modules/fetch-animals.js";
 
 document.documentElement.className += " js";
@@ -35,5 +35,7 @@ dropdown.init();
 const menuMobile = new MenuMobile("[data-menu='button']", "[data-menu= 'list']");
 menuMobile.init();
 
-businessHours();
+const businessHours = new BusinessHours("[data-week]", "open");
+businessHours.init();
+
 fetchAnimals();
