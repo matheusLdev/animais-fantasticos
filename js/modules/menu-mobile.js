@@ -14,7 +14,8 @@ export default class MenuMobile {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
   
-  toggleMenu() {
+  toggleMenu(event) {
+    event.preventDefault();
     [this.listMenu, this.btnMenu].forEach((item) => {
       item.classList.toggle(this.activeClass);
     });
