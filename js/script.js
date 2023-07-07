@@ -8,6 +8,7 @@ import Dropdown from "./modules/dropdown.js";
 import MenuMobile from "./modules/menu-mobile.js";
 import BusinessHours from "./modules/business-hours.js";
 import fetchAnimals from "./modules/fetch-animals.js";
+import SlideNav from './modules/slide-nav.js';
 
 document.documentElement.className += " js";
 
@@ -37,5 +38,9 @@ menuMobile.init();
 
 const businessHours = new BusinessHours("[data-week]", "open");
 businessHours.init();
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custom-controls");
 
 fetchAnimals();
