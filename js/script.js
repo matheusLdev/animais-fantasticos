@@ -5,7 +5,7 @@ import ScrollSmooth from "./modules/scroll-smooth.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import Dropdown from "./modules/dropdown.js";
-import menuMobile from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 import businessHours from "./modules/business-hours.js";
 import fetchAnimals from "./modules/fetch-animals.js";
 
@@ -29,9 +29,11 @@ tooltip.init();
 const scrollAnimate = new ScrollAnimate("[data-anime='scroll']");
 scrollAnimate.init();
 
-const dropdown = new Dropdown("[data-dropdown]")
+const dropdown = new Dropdown("[data-dropdown]");
 dropdown.init();
 
-menuMobile();
+const menuMobile = new MenuMobile("[data-menu='button']", "[data-menu= 'list']");
+menuMobile.init();
+
 businessHours();
 fetchAnimals();
